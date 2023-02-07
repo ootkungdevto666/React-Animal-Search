@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/AppHeader'
+import AppHeader from './components/AppHeader';
+import AnimalItem from './components/AnimalItem';
+import animals from './data/animals'
+import { useState } from 'react';
 
 function App() {
+  const [text,setText] = useState("ไม่ต้องห่วงฉัน");
+  const AnimalElements = animals.map((animal,index)=>{
+    return <AnimalItem key={index} animal={animal}/>;
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <AppHeader/>
+      <div className='app-grid'>
+          {AnimalElements}
+      </div>
     </div>
   );
 }
