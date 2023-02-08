@@ -1,11 +1,12 @@
 import './AnimalPost.css'
-function AnimalPost(){
+function AnimalPost(props){
+    const {animal,onBgClick} = props;
     return(
         <div className="animal-post">
-            <div className="animal-post-bg" />
+            <div className="animal-post-bg" onClick={onBgClick}/>
             <div className="animal-post-content">
-                <img src="/images/cat01.jpg" />
-                <h4>แมวน้อย1</h4>
+                <img src={animal.thumbnailUrl} />
+                <h4>{animal.title}</h4>
             </div>
         </div>
     )

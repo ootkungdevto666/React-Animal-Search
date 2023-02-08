@@ -2,7 +2,7 @@ import './AppHeader.css'
 function AppHeader() {
     return (
         <header className='app-header'>
-            <h4>Just Tattoo</h4>
+            <h4>Animals lovely</h4>
         </header>
     );
 }

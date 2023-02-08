@@ -11,10 +11,29 @@
 }
 
 .animal-post-bg{
-    background-color: black;
+    background-color: rgb(0, 0, 0,0.803);
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+.animal-post-content{
+    position: relative;
+    max-width: 1200px;
+    background-color: black;
+}
+
+.animal-post-content img{
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh-120px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.animal-post-content h4{
+    color: white;
+    text-align: center;
 }
