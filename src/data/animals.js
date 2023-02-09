@@ -10,7 +10,20 @@ const animals = [
     {
         title: "แมวงง",
         thumbnailUrl: "/images/cat03.jpg"
-    }
+    },
+    {
+        title: "หมาหงอย",
+        thumbnailUrl: "/images/dog01.jpg"
+    },
+    {
+        title: "หมาแจ๋ว",
+        thumbnailUrl: "/images/dog02.jpg"
+    },
+    {
+        title: "หมาแจ๋ว",
+        thumbnailUrl: "/images/dog03.jpg"
+    },
+
 ]
 
 
